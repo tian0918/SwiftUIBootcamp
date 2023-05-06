@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     private var items:[BootcampModel] = [
-        BootcampModel(title: "QRCode Generator", destinationName: "QRCodeView")
+        BootcampModel(title: "QRCode Generator", destinationName: "QRCodeView", type: .QRCODE)
     ]
     var body: some View {
 //        NavigationStack {
@@ -17,7 +17,7 @@ struct ContentView: View {
                 List {
                     ForEach(items) { item in
                         NavigationLink{
-                            MainView(type: item.destinationName)
+                            MainView(type: item.type)
                         } label: {
                             Text(item.title)
                         }
@@ -34,8 +34,13 @@ struct BootcampModel: Identifiable {
     var id: String = UUID().uuidString
     var title: String
     var destinationName: String
+    var type: ViewType
+    
+    
 }
-
+enum ViewType {
+    case QRCODE
+}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

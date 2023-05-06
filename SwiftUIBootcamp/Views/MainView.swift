@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct MainView: View {
-    var type:String
+    var type:ViewType
     var body: some View {
         VStack {
-            if type == "QRCodeView" {
+            if type == .QRCODE {
                 QRCodeView()
             }
         }
@@ -21,6 +21,6 @@ struct MainView: View {
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView(type: "QRCodeView")
+        MainView(type: ViewType.QRCODE)
     }
 }
