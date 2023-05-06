@@ -11,7 +11,11 @@ import SwiftUI
 struct SwiftUIBootcampApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                ContentView()
+                    .navigationTitle("SwiftUI Bootcamp")
+                    .navigationBarTitleDisplayMode(.inline)
+            }
         }
     }
 }
