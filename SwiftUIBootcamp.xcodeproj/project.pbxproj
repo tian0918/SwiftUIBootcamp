@@ -13,6 +13,7 @@
 		F90865D82A062D3100E6F589 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F90865D72A062D3100E6F589 /* Preview Assets.xcassets */; };
 		F90865E02A062F4C00E6F589 /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90865DF2A062F4C00E6F589 /* QRCodeView.swift */; };
 		F90865E22A06360500E6F589 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90865E12A06360500E6F589 /* MainView.swift */; };
+		F90865E52A08D59000E6F589 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90865E42A08D59000E6F589 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		F90865D72A062D3100E6F589 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F90865DF2A062F4C00E6F589 /* QRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
 		F90865E12A06360500E6F589 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F90865E42A08D59000E6F589 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 		F90865CF2A062D3000E6F589 /* SwiftUIBootcamp */ = {
 			isa = PBXGroup;
 			children = (
+				F90865E32A08D58200E6F589 /* Helper */,
 				F90865D02A062D3000E6F589 /* SwiftUIBootcampApp.swift */,
 				F90865DE2A062E8E00E6F589 /* Views */,
 				F90865D42A062D3100E6F589 /* Assets.xcassets */,
@@ -79,6 +82,14 @@
 				F90865DF2A062F4C00E6F589 /* QRCodeView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F90865E32A08D58200E6F589 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				F90865E42A08D59000E6F589 /* Extensions.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F90865E52A08D59000E6F589 /* Extensions.swift in Sources */,
 				F90865E02A062F4C00E6F589 /* QRCodeView.swift in Sources */,
 				F90865E22A06360500E6F589 /* MainView.swift in Sources */,
 				F90865D32A062D3000E6F589 /* ContentView.swift in Sources */,
