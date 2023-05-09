@@ -9,7 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     private var items:[BootcampModel] = [
-        BootcampModel(title: "QRCode Generator", destinationName: "QRCodeView", type: .QRCODE)
+        BootcampModel(title: "QRCode Generator", destinationName: "QRCodeView", type: .QRCODE),
+        BootcampModel(title: "CreitCard View", destinationName: "CreditCardView", type: .CREDITCARD)
     ]
     var body: some View {
 //        NavigationStack {
@@ -40,6 +41,7 @@ struct BootcampModel: Identifiable {
 }
 enum ViewType {
     case QRCODE
+    case CREDITCARD
 }
 
 struct ContentView_Previews: PreviewProvider {

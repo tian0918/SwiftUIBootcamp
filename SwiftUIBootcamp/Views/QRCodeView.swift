@@ -22,6 +22,7 @@ struct QRCodeView: View {
                     VStack {
                         TextField("输入二维码内容", text: $qrString)
                             .frame(height: 60)
+                            .clearButton(text: $qrString)
                             .textFieldStyle(.roundedBorder)
                         QRImage(generatorQRCode(from: qrString))
                     }

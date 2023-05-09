@@ -14,6 +14,8 @@
 		F90865E02A062F4C00E6F589 /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90865DF2A062F4C00E6F589 /* QRCodeView.swift */; };
 		F90865E22A06360500E6F589 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90865E12A06360500E6F589 /* MainView.swift */; };
 		F90865E52A08D59000E6F589 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90865E42A08D59000E6F589 /* Extensions.swift */; };
+		F90865E72A08D93100E6F589 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90865E62A08D93100E6F589 /* ViewModifiers.swift */; };
+		F9AD55282A0A2AC100B5898C /* CreditCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AD55272A0A2AC100B5898C /* CreditCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		F90865DF2A062F4C00E6F589 /* QRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
 		F90865E12A06360500E6F589 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		F90865E42A08D59000E6F589 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F90865E62A08D93100E6F589 /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
+		F9AD55272A0A2AC100B5898C /* CreditCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 				F90865D22A062D3000E6F589 /* ContentView.swift */,
 				F90865E12A06360500E6F589 /* MainView.swift */,
 				F90865DF2A062F4C00E6F589 /* QRCodeView.swift */,
+				F9AD55272A0A2AC100B5898C /* CreditCardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -88,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				F90865E42A08D59000E6F589 /* Extensions.swift */,
+				F90865E62A08D93100E6F589 /* ViewModifiers.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -162,9 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9AD55282A0A2AC100B5898C /* CreditCardView.swift in Sources */,
 				F90865E52A08D59000E6F589 /* Extensions.swift in Sources */,
 				F90865E02A062F4C00E6F589 /* QRCodeView.swift in Sources */,
 				F90865E22A06360500E6F589 /* MainView.swift in Sources */,
+				F90865E72A08D93100E6F589 /* ViewModifiers.swift in Sources */,
 				F90865D32A062D3000E6F589 /* ContentView.swift in Sources */,
 				F90865D12A062D3000E6F589 /* SwiftUIBootcampApp.swift in Sources */,
 			);

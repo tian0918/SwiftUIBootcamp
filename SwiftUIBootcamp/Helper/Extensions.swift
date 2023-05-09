@@ -6,7 +6,11 @@
 //
 
 import SwiftUI
-
+extension View {
+    func clearButton(text: Binding<String>) -> some View {
+        modifier(TextFieldClearButton(text: text))
+    }
+}
 extension CIImage {
     var transparent: CIImage? {
         return inverted?.blackTransparent
@@ -43,7 +47,6 @@ extension CIImage {
     
     func combined(with image: CIImage) -> CIImage? {
         guard let combinedFilter = CIFilter(name: "CISourceOverCompositing") else { return nil }
-        
         let centerTransForm = CGAffineTransform(translationX: extent.midX - (image.extent.width / 2), y: extent.midY - (image.extent.height / 2))
         combinedFilter.setValue(image.transformed(by: centerTransForm), forKey: "inputImage")
         combinedFilter.setValue(self, forKey: "inputBackgroundImage")

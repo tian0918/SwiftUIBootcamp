@@ -14,13 +14,10 @@ struct MainView: View {
             if type == .QRCODE {
                 QRCodeView()
             }
+            if type == .CREDITCARD {
+                CreditCardView()
+            }
         }
         
-    }
-}
-
-struct MainView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainView(type: ViewType.QRCODE)
     }
 }
