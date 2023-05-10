@@ -16,6 +16,9 @@
 		F90865E52A08D59000E6F589 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90865E42A08D59000E6F589 /* Extensions.swift */; };
 		F90865E72A08D93100E6F589 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90865E62A08D93100E6F589 /* ViewModifiers.swift */; };
 		F9AD55282A0A2AC100B5898C /* CreditCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AD55272A0A2AC100B5898C /* CreditCardView.swift */; };
+		F9AD55372A0B384200B5898C /* TabPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AD55342A0B384200B5898C /* TabPosition.swift */; };
+		F9AD55382A0B384200B5898C /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AD55352A0B384200B5898C /* CustomTabView.swift */; };
+		F9AD55392A0B384200B5898C /* TabShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AD55362A0B384200B5898C /* TabShape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		F90865E42A08D59000E6F589 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		F90865E62A08D93100E6F589 /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
 		F9AD55272A0A2AC100B5898C /* CreditCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardView.swift; sourceTree = "<group>"; };
+		F9AD55342A0B384200B5898C /* TabPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabPosition.swift; sourceTree = "<group>"; };
+		F9AD55352A0B384200B5898C /* CustomTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
+		F9AD55362A0B384200B5898C /* TabShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabShape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,7 @@
 				F90865E12A06360500E6F589 /* MainView.swift */,
 				F90865DF2A062F4C00E6F589 /* QRCodeView.swift */,
 				F9AD55272A0A2AC100B5898C /* CreditCardView.swift */,
+				F9AD55352A0B384200B5898C /* CustomTabView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -94,6 +101,8 @@
 			children = (
 				F90865E42A08D59000E6F589 /* Extensions.swift */,
 				F90865E62A08D93100E6F589 /* ViewModifiers.swift */,
+				F9AD55342A0B384200B5898C /* TabPosition.swift */,
+				F9AD55362A0B384200B5898C /* TabShape.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -168,13 +177,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9AD55372A0B384200B5898C /* TabPosition.swift in Sources */,
 				F9AD55282A0A2AC100B5898C /* CreditCardView.swift in Sources */,
 				F90865E52A08D59000E6F589 /* Extensions.swift in Sources */,
 				F90865E02A062F4C00E6F589 /* QRCodeView.swift in Sources */,
 				F90865E22A06360500E6F589 /* MainView.swift in Sources */,
 				F90865E72A08D93100E6F589 /* ViewModifiers.swift in Sources */,
+				F9AD55382A0B384200B5898C /* CustomTabView.swift in Sources */,
 				F90865D32A062D3000E6F589 /* ContentView.swift in Sources */,
 				F90865D12A062D3000E6F589 /* SwiftUIBootcampApp.swift in Sources */,
+				F9AD55392A0B384200B5898C /* TabShape.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
