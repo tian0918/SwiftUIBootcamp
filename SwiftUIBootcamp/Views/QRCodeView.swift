@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
-
+import PhotosUI
 struct QRCodeView: View {
     @State private var qrString: String = ""
     private var resultQRImg: Image?
+    @State private var selectedImg:Image?
+    @State private var pickerItem:PhotosPickerItem?
     @State var qrImageWidth: Double = 100
     @State var currentColor: Color = Color(uiColor: .black)
     var body: some View {
@@ -24,9 +26,16 @@ struct QRCodeView: View {
                             .frame(height: 60)
                             .clearButton(text: $qrString)
                             .textFieldStyle(.roundedBorder)
-                        stylingQRImg()
-                            .resizable()
-                            .frame(width: CGFloat(qrImageWidth), height: CGFloat(qrImageWidth))
+                        ZStack {
+                            if let selectedImg {
+                                selectedImg
+                                    .resizable()
+                                    .frame(width:CGFloat(qrImageWidth), height: CGFloat(qrImageWidth))
+                            }
+                            stylingQRImg()
+                                .resizable()
+                                .frame(width: CGFloat(qrImageWidth), height: CGFloat(qrImageWidth))
+                        }
 //                        UIImage(named: "openai")
 //                        QRImage(generatorQRCode(from: qrString))
                     }
@@ -37,6 +46,18 @@ struct QRCodeView: View {
                                 ChangeSizeView()
                                 ColorPickerView(title: "颜色", selection: $currentColor)
                                     .frame(width: 150, alignment: .trailing)
+                            }
+                            PhotosPicker(selection: $pickerItem) {
+                                Text("选择图片")
+                            }.onChange(of: pickerItem) { newValue in
+                                Task {
+                                    if let imgData = try? await pickerItem?.loadTransferable(type: Data.self) {
+                                        if let uiiimage = UIImage(data: imgData) {
+                                            selectedImg = Image(uiImage: uiiimage)
+                                            return
+                                        }
+                                    }
+                                }
                             }
                             
                         }
