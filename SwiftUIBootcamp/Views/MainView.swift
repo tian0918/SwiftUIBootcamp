@@ -18,8 +18,9 @@ struct MainView: View {
                  QRCodeView()
             case .CREDITCARD:
                  CreditCardView()
-            default:
-                 EmptyView()
+            case .CLOCKVIEW:
+                ClockView()
+
             }
         }
         

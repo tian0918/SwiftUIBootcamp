@@ -19,6 +19,8 @@
 		F9AD55372A0B384200B5898C /* TabPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AD55342A0B384200B5898C /* TabPosition.swift */; };
 		F9AD55382A0B384200B5898C /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AD55352A0B384200B5898C /* CustomTabView.swift */; };
 		F9AD55392A0B384200B5898C /* TabShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AD55362A0B384200B5898C /* TabShape.swift */; };
+		F9AD55672A130A2300B5898C /* BellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AD55662A130A2300B5898C /* BellView.swift */; };
+		F9AD55692A1312FB00B5898C /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AD55682A1312FB00B5898C /* ClockView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,9 @@
 		F9AD55342A0B384200B5898C /* TabPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabPosition.swift; sourceTree = "<group>"; };
 		F9AD55352A0B384200B5898C /* CustomTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		F9AD55362A0B384200B5898C /* TabShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabShape.swift; sourceTree = "<group>"; };
+		F9AD55662A130A2300B5898C /* BellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BellView.swift; sourceTree = "<group>"; };
+		F9AD55682A1312FB00B5898C /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		F9AD556A2A1321DA00B5898C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +72,7 @@
 		F90865CF2A062D3000E6F589 /* SwiftUIBootcamp */ = {
 			isa = PBXGroup;
 			children = (
+				F9AD556A2A1321DA00B5898C /* Info.plist */,
 				F90865E32A08D58200E6F589 /* Helper */,
 				F90865D02A062D3000E6F589 /* SwiftUIBootcampApp.swift */,
 				F90865DE2A062E8E00E6F589 /* Views */,
@@ -92,6 +98,8 @@
 				F90865DF2A062F4C00E6F589 /* QRCodeView.swift */,
 				F9AD55272A0A2AC100B5898C /* CreditCardView.swift */,
 				F9AD55352A0B384200B5898C /* CustomTabView.swift */,
+				F9AD55662A130A2300B5898C /* BellView.swift */,
+				F9AD55682A1312FB00B5898C /* ClockView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -178,7 +186,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9AD55372A0B384200B5898C /* TabPosition.swift in Sources */,
+				F9AD55692A1312FB00B5898C /* ClockView.swift in Sources */,
 				F9AD55282A0A2AC100B5898C /* CreditCardView.swift in Sources */,
+				F9AD55672A130A2300B5898C /* BellView.swift in Sources */,
 				F90865E52A08D59000E6F589 /* Extensions.swift in Sources */,
 				F90865E02A062F4C00E6F589 /* QRCodeView.swift in Sources */,
 				F90865E22A06360500E6F589 /* MainView.swift in Sources */,
@@ -317,8 +327,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIBootcamp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIBootcamp/Info.plist;
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "选择/保存生成的二维码";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -346,8 +356,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIBootcamp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIBootcamp/Info.plist;
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "选择/保存生成的二维码";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
