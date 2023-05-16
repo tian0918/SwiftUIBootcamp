@@ -20,6 +20,8 @@ struct MainView: View {
                  CreditCardView()
             case .CLOCKVIEW:
                 ClockView()
+            case .ALARM:
+                CircularSliderView()
 
             }
         }

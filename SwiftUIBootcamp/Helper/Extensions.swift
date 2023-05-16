@@ -10,6 +10,10 @@ extension View {
     func clearButton(text: Binding<String>) -> some View {
         modifier(TextFieldClearButton(text: text))
     }
+    //Screen Bounds Extensions
+    func screenBounds() -> CGRect {
+        return UIScreen.main.bounds
+    }
 }
 extension CIImage {
     var transparent: CIImage? {

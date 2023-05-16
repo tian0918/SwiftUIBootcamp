@@ -12,7 +12,8 @@ struct ContentView: View {
         BootcampModel(title: "QRCode Generator", destinationName: "QRCodeView", type: .QRCODE),
         BootcampModel(title: "CreitCard View", destinationName: "CreditCardView", type: .CREDITCARD),
         BootcampModel(title: "Custom TabBar View", destinationName: "", type: .CUSTOMTAB),
-        BootcampModel(title: "Clock View", destinationName: "", type: .CLOCKVIEW)
+        BootcampModel(title: "Clock View", destinationName: "", type: .CLOCKVIEW),
+        BootcampModel(title: "Alram View", destinationName: "", type: .ALARM)
     ]
     var body: some View {
 //        NavigationStack {
@@ -46,6 +47,7 @@ enum ViewType {
     case CREDITCARD
     case CUSTOMTAB
     case CLOCKVIEW
+    case ALARM
 }
 
 struct ContentView_Previews: PreviewProvider {
