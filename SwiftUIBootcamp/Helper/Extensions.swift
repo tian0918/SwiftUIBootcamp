@@ -14,6 +14,13 @@ extension View {
     func screenBounds() -> CGRect {
         return UIScreen.main.bounds
     }
+    var viewWidth: CGFloat {
+        return screenBounds().width
+    }
+//    func viewWidth() -> CGFloat {
+//        
+//        return screenBounds().width
+//    }
 }
 extension CIImage {
     var transparent: CIImage? {

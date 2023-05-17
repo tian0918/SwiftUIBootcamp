@@ -22,6 +22,8 @@ struct MainView: View {
                 ClockView()
             case .ALARM:
                 CircularSliderView()
+            case .BELLVIEW:
+                BellView()
 
             }
         }

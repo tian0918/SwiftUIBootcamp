@@ -11,35 +11,58 @@ struct BellView: View {
     var timeNumber:[Int] = [0,9,8,7,6,5,4,3,2,1]
     var body: some View {
         VStack {
-            
-//            ForEach(1..<12) {
-//                Text("\($0)")
-//                    .frame(width: 35, height: 35)
-//                    .padding()
-//                    .overlay {
-//                        Circle()
-//                            .stroke(.orange,lineWidth: 2)
-//                            .padding(5)
-//                    }
-//            }
-            
             ZStack {
                 Circle()
                     .fill(.black.opacity(0.8))
-                    .padding(.horizontal)
+               
+                Circle()
+                    .trim(from:0, to:0.6)
+                    .stroke(.blue, style:
+                                StrokeStyle(lineWidth: 30, lineCap: .round, lineJoin: .round)
+                    )
+                    .padding(30)
+                    .rotationEffect(.init(degrees: 85))
+                    .gesture(
+                        DragGesture()
+                            .onChanged({ value in
+                                onDrag(value: value)
+                            })
+                    )
                 ForEach(0..<timeNumber.count, id: \.self) { i in
                     Text("\(timeNumber[i])")
                         .foregroundColor(.white)
+                        .rotationEffect(.init(degrees: -Double(i) * 23))
                         .frame(width: 30, height: 30)
                         .background{
                             Circle()
-                                .stroke(.red)
                         }
-                        .offset(y:150)
+                        .offset(y:viewWidth / 2 - 50)
                         .rotationEffect(.init(degrees: Double(i) * 23))
                 }
+
+                //Stop Sign
+                Rectangle()
+                    .fill(.white)
+                    .frame(width: 5, height: 50)
+                    .offset(y:viewWidth / 2 - 55)
+                    .rotationEffect(.init(degrees: -30))
             }
+            .frame(width:viewWidth - 40)
         }
+        
+    }
+    func onDrag(value: DragGesture.Value) {
+        let vector = CGVector(dx: value.location.x, dy: value.location.y)
+        //Removing the Button Radius
+        // Button Dimeter = 30
+        
+        let radians = atan2(vector.dy - 15, vector.dx - 15)
+        
+        // Converting to angle
+        var angle = radians * 180 / .pi
+        if angle < 0 { angle = 360 + angle}
+        
+       
         
     }
 }
