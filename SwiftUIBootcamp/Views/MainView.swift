@@ -24,6 +24,8 @@ struct MainView: View {
                 CircularSliderView()
             case .BELLVIEW:
                 BellView()
+            case .ELASTIC:
+                ElasticScrollView()
 
             }
         }

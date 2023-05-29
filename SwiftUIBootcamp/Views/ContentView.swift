@@ -14,7 +14,8 @@ struct ContentView: View {
         BootcampModel(title: "Custom TabBar View", destinationName: "", type: .CUSTOMTAB),
         BootcampModel(title: "Clock View", destinationName: "", type: .CLOCKVIEW),
         BootcampModel(title: "Alram View", destinationName: "", type: .ALARM),
-        BootcampModel(title: "Bell View", destinationName: "", type: .BELLVIEW)
+        BootcampModel(title: "Bell View", destinationName: "", type: .BELLVIEW),
+        BootcampModel(title: "Elastic ScrollView", destinationName: "", type: .ELASTIC)
     ]
     var body: some View {
 //        NavigationStack {
@@ -50,6 +51,7 @@ enum ViewType {
     case CLOCKVIEW
     case ALARM
     case BELLVIEW
+    case ELASTIC
 }
 
 struct ContentView_Previews: PreviewProvider {
