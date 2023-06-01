@@ -25,6 +25,8 @@
 		F9B5D51F2A247A7800F2B4CB /* ElasticScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B5D51E2A247A7800F2B4CB /* ElasticScrollView.swift */; };
 		F9B5D5212A247DFC00F2B4CB /* OffsetHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B5D5202A247DFC00F2B4CB /* OffsetHelper.swift */; };
 		F9B5D5232A24815900F2B4CB /* View_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B5D5222A24815900F2B4CB /* View_Extensions.swift */; };
+		F9B5D5252A282BA500F2B4CB /* StickyHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B5D5242A282BA500F2B4CB /* StickyHeaderView.swift */; };
+		F9B5D5282A28306000F2B4CB /* ScrollDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B5D5272A28306000F2B4CB /* ScrollDetector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		F9B5D51E2A247A7800F2B4CB /* ElasticScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElasticScrollView.swift; sourceTree = "<group>"; };
 		F9B5D5202A247DFC00F2B4CB /* OffsetHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetHelper.swift; sourceTree = "<group>"; };
 		F9B5D5222A24815900F2B4CB /* View_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View_Extensions.swift; sourceTree = "<group>"; };
+		F9B5D5242A282BA500F2B4CB /* StickyHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeaderView.swift; sourceTree = "<group>"; };
+		F9B5D5272A28306000F2B4CB /* ScrollDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollDetector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,7 @@
 				F9AD55682A1312FB00B5898C /* ClockView.swift */,
 				F9B5D51C2A135E0300F2B4CB /* CircularSliderView.swift */,
 				F9B5D51E2A247A7800F2B4CB /* ElasticScrollView.swift */,
+				F9B5D5242A282BA500F2B4CB /* StickyHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -123,6 +128,7 @@
 				F9AD55362A0B384200B5898C /* TabShape.swift */,
 				F9B5D5202A247DFC00F2B4CB /* OffsetHelper.swift */,
 				F9B5D5222A24815900F2B4CB /* View_Extensions.swift */,
+				F9B5D5272A28306000F2B4CB /* ScrollDetector.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -199,12 +205,14 @@
 			files = (
 				F9AD55372A0B384200B5898C /* TabPosition.swift in Sources */,
 				F9AD55692A1312FB00B5898C /* ClockView.swift in Sources */,
+				F9B5D5282A28306000F2B4CB /* ScrollDetector.swift in Sources */,
 				F9AD55282A0A2AC100B5898C /* CreditCardView.swift in Sources */,
 				F9B5D51F2A247A7800F2B4CB /* ElasticScrollView.swift in Sources */,
 				F9AD55672A130A2300B5898C /* BellView.swift in Sources */,
 				F90865E52A08D59000E6F589 /* Extensions.swift in Sources */,
 				F90865E02A062F4C00E6F589 /* QRCodeView.swift in Sources */,
 				F90865E22A06360500E6F589 /* MainView.swift in Sources */,
+				F9B5D5252A282BA500F2B4CB /* StickyHeaderView.swift in Sources */,
 				F90865E72A08D93100E6F589 /* ViewModifiers.swift in Sources */,
 				F9AD55382A0B384200B5898C /* CustomTabView.swift in Sources */,
 				F9B5D5232A24815900F2B4CB /* View_Extensions.swift in Sources */,

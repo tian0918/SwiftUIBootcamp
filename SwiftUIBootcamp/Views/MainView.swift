@@ -26,6 +26,8 @@ struct MainView: View {
                 BellView()
             case .ELASTIC:
                 ElasticScrollView()
+            case .STICKHEADER:
+                StickyHeaderView()
 
             }
         }
